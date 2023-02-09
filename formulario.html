@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulário</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="./Css/formulario.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar bg-light">
+                <div class="container-fluid ">
+                  <a class="navbar-brand " href="#">Formulário</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img  src="./img/logo.png" class="d-block w-100" height="200px" width="6px">
+                          </div>
+                        </div>
+                      </div>
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Paola Aparecida Pedro</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <main>
+            <form>
+              <fieldset> 
+                <legend>Dados Pessoais</legend>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" class="input" required>
+
+                <label for="date">Data de Nascimento:</label>
+                <input type="date" id="data" class="input" required>
+
+                <label for="cpf">CPF:</label>
+                <input type="number" id="cpf" class="input" required placeholder="XXXXXXXXX-XX">
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" class="input" placeholder="(XX)XXXXX-XXXX">
+
+                <label for="nome">Nome da Mãe:</label>
+                <input type="text" id="nome" class="input" required> 
+
+              </fieldset>
+              <fieldset>
+                <legend>Endereço:</legend>
+
+                <label for="pais">País:</label>
+                <input type="text" id="pais" class="input" required>
+
+                <label for="cep">CEP:</label>
+                <input type="number" id="cep" class="input" required placeholder="XXXXX-XXX">
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" class="input" required>
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" class="input" required>
+
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua" class="input" required>
+
+                <label for="numero">N°:</label>
+                <input type="number" id="numero" class="input" required>
+
+              </fieldset>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" class="input" required>
+
+                <label for="email">Repita o E-mail:</label>
+                <input type="email" id="email" class="input" required>
+
+                <label for="arquivo">Deseja enviar algum arquivo?:</label>
+                <input type="file" id="arquivo" class="input" required>
+      
+               <fieldset>
+                
+                <legend >Crie um Login e Senha</legend>
+                <label for="username">Username:</label>
+                <input type="text" id="username" class="input">
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" class="input">
+
+              </fieldset>
+            </form>
+            <form>
+                <fieldset>
+                  <legend>Como devemos entrar em contato?</legend>
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email" checked>E-mail </label>
+                    <label for="radio-telefone"><input type="radio" name= "contato" id="radio-telefone">Telefone </label>
+                </fieldset>
+
+                <label><input type="checkbox">Deseja receber novidades por email?</label>
+                <label for="radio-email"></label>
+                <input type="submit" value="Enviar" class="enviar"> 
+                
+            </form>
+        </main>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</html>
